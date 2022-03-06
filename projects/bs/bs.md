@@ -1,3 +1,7 @@
+---
+permalink: /projects/bs
+---
+
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
