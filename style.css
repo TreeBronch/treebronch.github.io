@@ -116,11 +116,48 @@
       border: 0px;
       color:white;
       position: fixed;
+      top:0
   }
 
   .nav-controls {
     display: flex;
   }
-  h1 {
-      padding: 600px
+
+  .navigation {
+    z-index: 999;
+  }
+
+  .top-bar {
+    background-color: #353535;
+    align-items: center;
+    overflow: hidden;
+    padding:40px;
+    transition: color 0.3s;
+    display:table;
+    position:relative;
+  }
+  .top-bar a{
+    padding: 50px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#ffffff;
+    vertical-align: top;
+  }
+
+  .underbar-feedback {
+      
+  }
+
+  .solid-on-scroll {
+    background-color:#35353500;
+  }
+  .top-bar img{
+    position:absolute;
+    left: 35px;;
+    bottom: 25px;
+  }
+  .scroll-test {
+
   }
