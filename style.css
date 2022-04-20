@@ -130,34 +130,51 @@
   .top-bar {
     background-color: #353535;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
     padding:40px;
     transition: color 0.3s;
-    display:table;
+    display:flex;
     position:relative;
   }
   .top-bar a{
-    padding: 50px 40px;
+    padding: 0px 40px;
     text-align: center;
     text-decoration: none;
     font-size: 30px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:#ffffff;
     vertical-align: top;
+    overflow: hidden;
   }
 
-  .underbar-feedback {
-      
+
+  .underline-anim {
+    display:inline-block;
+    position: relative;
   }
+  .underline-anim:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .underline-anim:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
 
   .solid-on-scroll {
     background-color:#35353500;
   }
   .top-bar img{
-    position:absolute;
-    left: 35px;;
-    bottom: 25px;
-  }
-  .scroll-test {
 
   }
